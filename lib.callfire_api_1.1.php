@@ -224,15 +224,15 @@ class callfire_subscriptions extends callfire_api_base
 	* Example:
 	* 
 	*	$data				= array();
-	*	$endpoint_url		= 'http://my.domain.com/endpoint/to/receive/notifications';
+	*	$endpoint_url			= 'http://my.domain.com/endpoint/to/receive/notifications';
 	*
-	*	$trigger_event		= 'INBOUND_TEXT_FINISHED';
+	*	$trigger_event			= 'INBOUND_TEXT_FINISHED';
 
-	*	$data['RequestId']			= 'http://unique/url/just/to/stop/duplicate/requests'; I use a time stamp here
+	*	$data['RequestId']		= 'http://unique/url/just/to/stop/duplicate/requests'; I use a time stamp here
 	*	$data['NotificationFormat']	= 'JSON';
-	*	$data['Enabled']			= 'true';
+	*	$data['Enabled']		= 'true';
 	*	$data['NonStrictSsl']		= 'true';
-	*	$data['Endpoint']			= $endpoint_url;
+	*	$data['Endpoint']		= $endpoint_url;
 	*	$data['TriggerEvent']		= $trigger_event;
 	*	$data['BroadcastId']		= $some_callfire_campaign_id
 
